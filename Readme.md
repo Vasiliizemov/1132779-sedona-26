@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Василий Земов](https://up.htmlacademy.ru/htmlcss/26/user/1132779).
+* Студент: [Василий Земов=)](https://up.htmlacademy.ru/htmlcss/26/user/1132779).
 <<<<<<< HEAD
 * Наставник:[Артем_Аношин](https://up.htmlacademy.ru/htmlcss/26/user/561851).
 
