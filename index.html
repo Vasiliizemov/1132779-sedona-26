@@ -49,14 +49,33 @@
 	
 	<section><h3>Заинтересовались?</h3>
 		<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне:</p>
-		<img src="img/map.jpg" alt="Карта дорог штата Аризона">
-	<div>
-		<h3>Поиск гостиницы в Седоне</h3>
-		<ul>
-			<!-- Здесь инпуты, пройдем в следующем разделе <li>-->
-		</ul>
+		<div>
+		<form method="post" action="https://echo.htmlacademy.ru">
+			<h2>Поиск гостиницы в Седоне</h2>
+			<label for="filter-date-on">Дата заезда</label>
+			<input type="text" name="date-on" id="filter-date-on" placeholder="24 апреля 2017"><br>
+			<label for="filter-date-of">Дата заезда</label>
+			<input type="text" name="date-of" id="filter-date-of" placeholder="4 июля 2017"><br>
+			<label for="filter-adults">Взрослые</label> 
+			<select name="adults" id="filter-adults">
+				<option value="1">1</option>
+				<option value="2" selected>2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<label for="filter-children">Дети</label> 
+			<select name="child" id="filter-children">
+				<option value="0" selected>0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select><br>
+			<input type="submit" name="find" id="button-find" value="Найти">
+		</form>
 	</div>
-</section>
+		<img src="img/map.jpg" alt="Карта дорог штата Аризона">
+	</section>
 </main>
 <footer>
 	<div class=footer-col>

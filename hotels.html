@@ -17,29 +17,71 @@
 	</nav>
 </header>
 <main>
-	<section>
-		<div class="header-row"><h2>Критерии выбора жилья</h2>
-			<img src="img/header-row.jpg" width="400" height="200" alt="фоновая картинка">
-		<div class="header-col"><p>Инфаструктура:</p>
-		<ul>
-			<li>Бассейн</li>
-			<li>Парковка</li>
-			<li>Wi-fi</li>
-		</ul></div>
-		<div class="header-col"><p>Тип жилья:</p>
-		<ul>
-			<li>Гостиница</li>
-			<li>Мотель</li>
-			<li>Апартаменты</li>
-		</ul></div>
-		<div class="header-col-wide"><p>Стоимость в сутки(Р):</p><!-- Здесь будет цена(Тема "про инпуты")--> <button type="button">Показать</button></div></div>
-	     <div class="header-row-small"><p>Найдено:</p> 
-	     <p>Сортировка:</p>
-	     <ul>
-	     	<li>по цене</li>
-	     	<li>по типу</li>
-	     	<li>по рейтингу</li>
-	     </ul><!-- Здесь будет количество отелей(Тема "про инпуты")--></div>
+	<section class="header-row">
+		<h2>Критерии выбора жилья</h2>
+		<img src="img/header-row.jpg" width="400" height="200" alt="фоновая картинка">
+		<form  method="post" action="https://echo.htmlacademy.ru">
+			<fieldset class="header-col">
+				<legend>Инфаструктура:</legend>
+				<ul>
+					<li>
+						<input type="checkbox" name="infrastructure" id="filter-infrastructure" checked>
+						<label for="filter-infrastructure"> Бассейн</label>
+					</li>
+					<li>
+						<input type="checkbox" name="parking" id="filter-parking">
+						<label for="filter-parking">Парковка</label> 
+					</li>
+					<li>
+						<input type="checkbox" name="wi-fi" id="filter-wi-fi">
+						<label for="filter-wi-fi">Wi-fi</label>  
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="header-col">
+		        <legend>Тип жилья:</legend>
+				<ul>
+					<li>
+						<input type="checkbox" name="hotel" id="filter-hotel" checked>
+						<label for="filter-hotel">Гостиница</label> 
+					</li>
+					<li>
+						<input type="checkbox" name="motel" id="filter-motel" checked> 
+						<label for="filter-motel">Мотель</label> 
+					</li>
+					<li>
+						<input type="checkbox" name="apartments" id="filter-apartments" checked> <label for="filter-apartments">Апартаменты</label> 
+					</li>
+				</ul>
+			</fieldset>
+			<div class="header-col-wide">
+				<table style="border-collapse: collapse; width: 400px; height: 20px;"> 
+					<caption>Стоимость в сутки(Р):</caption>
+					<tr>
+						<td>От</td>
+						<td>До</td>
+					</tr>
+				</table>
+				<input type="range" name="price" min="1" max="100" value="50" id="filter-range">
+			</div>
+	    	<div class="header-row-small"><p>Найдено:</p> 
+	     		<label>Сортировка:</label>
+	     		<ul>
+	     			<li>
+	     				<input type="radio" name="type" id="filter-price" value="1" checked>
+	     				<label for="filter-price">по цене</label> 
+	     			</li>
+	     			<li>
+	     				<input type="radio" name="type" id="filter-type" value="2">
+	     				<label for="filter-type">по типу</label>
+	     			</li>
+	     			<li>
+	     			    <input type="radio" name="type" id="filter-rating" value="3"><label for="filter-rating">по рейтингу</label> 
+	     			</li>
+	     		</ul>
+	     		<input type="submit" name="button" id="filter-button" value="Показать"> 
+	     	</div>
+	 	</form>
 	</section>
 	<section>
 		<h2>
